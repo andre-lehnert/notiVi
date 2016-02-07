@@ -1,5 +1,17 @@
+//- index.jade
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+ .container
+  .page-header
+   h1= title
+   p.lead
+    | Welcome to #{title}
+  h2 Dashboard     
+  .row.margin-top-50px
+   .col-md-4 
+    a.btn.btn-success(href="/stepper") Stepper  
+   .col-md-4 
+    a.btn.btn-success(href="/tts") TTS  
+   .col-md-4 
+    a.btn.btn-success(href="/siliconid") SiliconID

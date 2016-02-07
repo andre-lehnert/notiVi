@@ -1,0 +1,20 @@
+//- tts.jade
+extends layout
+
+block content
+ .container
+  .page-header
+   h1= title
+   p.lead
+    | Example with Google-TTS-API
+  h2 Audio Examples     
+  .row
+   .col-md-3 
+    input(type="button", onclick='responsiveVoice.speak("Hello World", "US English Male")', value='🔊 US Male')
+   .col-md-3 
+    input(type="button", onclick='responsiveVoice.speak("Hello World", "US English Female")', value='🔊 US Female')
+   .col-md-3 
+    input(type="button", onclick='responsiveVoice.speak("Hello World", "UK English Male")', value='🔊 UK Male')
+   .col-md-3 
+    input(type="button", onclick='responsiveVoice.speak("Hello World", "UK English Female")', value='🔊 UK Female')
+ 
