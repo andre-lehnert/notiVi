@@ -43,11 +43,9 @@ app.use(express.static(path.join(__dirname, 'public')));
  * ***************************
  */
 var routes = require('./routes/index');
-var users = require('./routes/users');
 var tts = require('./routes/tts');
 
 app.use('/', routes);
-app.use('/users', users);
 app.use('/tts', tts);
 
 
